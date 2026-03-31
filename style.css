@@ -1,0 +1,124 @@
+:root {
+            --color-background: #ffffff;
+            --color-text-primary: #1d1d1f;
+            --color-link-secondary: #5f5f65; /* Muted color for secondary links */
+            
+            /* Bright, attention-grabbing CTA colors */
+            --color-cta: #ff4757;
+            --color-cta-text: #ffffff;
+            --color-cta-shadow: rgba(255, 71, 87, 0.4);
+
+            --font-family-sans-serif: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            --font-weight-bold: 700;
+            --navbar-height: 80px;
+            --navbar-padding: 1.5rem;
+            --container-width: 1200px;
+            --transition-speed: 0.2s;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+        
+        /*
+        ========================================
+        Base & Page Styles
+        ========================================
+        */
+        *, *::before, *::after { box-sizing: border-box; }
+        body { margin: 0; font-family: var(--font-family-sans-serif); line-height: 1.6; }
+        .content { height: 200vh; max-width: var(--container-width); margin: 0 auto; padding: calc(var(--navbar-height) + 2rem) var(--navbar-padding); }
+        ul { list-style: none; margin: 0; padding: 0; }
+        a { text-decoration: none; transition: color var(--transition-speed) ease; }
+
+        /*
+        ========================================
+        Main Navbar Structure
+        ========================================
+        */
+        .navbar {
+            height: var(--navbar-height); display: flex; align-items: center;
+            position: sticky; top: 0; z-index: 1000;
+            background-color: var(--color-background); border-bottom: 1px solid #f0f0f0;
+        }
+        .navbar__container { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: var(--container-width); margin: 0 auto; padding: 0 var(--navbar-padding); }
+        .navbar__brand { font-size: 1.5rem; font-weight: var(--font-weight-bold); color: var(--color-text-primary); }
+
+        /*
+        ========================================
+        Mobile Menu & Links
+        ========================================
+        */
+        .navbar__toggle { display: block; border: none; background: transparent; cursor: pointer; }
+        .navbar__menu { display: none; position: absolute; top: var(--navbar-height); left: 0; width: 100%; background-color: var(--color-background); box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+        .navbar__menu.is-active { display: block; }
+        .navbar__item:not(:last-child) { border-bottom: 1px solid #f0f0f0; }
+
+        /* Base styles for all links */
+        .navbar__link { display: block; padding: 1.25rem var(--navbar-padding); font-weight: 500; }
+        
+        /* De-emphasized link color */
+        .navbar__link:not(.navbar__link--cta) { color: var(--color-link-secondary); }
+        .navbar__link:not(.navbar__link--cta):hover { color: var(--color-text-primary); }
+        
+        /* CTA button is distinct even on mobile */
+        .navbar__link--cta { color: var(--color-cta); font-weight: var(--font-weight-bold); }
+        
+        :is(.navbar__toggle, .navbar__link):focus-visible { outline: 2px solid var(--color-cta); outline-offset: 2px; border-radius: 4px; }
+        
+        /*
+        ========================================
+        Desktop Styles & CTA Emphasis
+        ========================================
+        */
+        @media (min-width: 768px) {
+            .navbar__toggle { display: none; }
+            .navbar__menu { display: flex; align-items: center; position: static; width: auto; background: none; box-shadow: none; }
+            .navbar__list { display: flex; align-items: center; gap: 2rem; }
+            .navbar__item:not(:last-child) { border: none; }
+            .navbar__link { padding: 0.5rem; position: relative; }
+            
+            /* Subtle underline for secondary links on desktop */
+            .navbar__link:not(.navbar__link--cta)::after {
+                content: ''; position: absolute; bottom: -4px; left: 0;
+                width: 0; height: 2px; background-color: var(--color-text-primary);
+                transition: width var(--transition-speed) ease;
+            }
+            .navbar__link:not(.navbar__link--cta):hover::after,
+            .navbar__link:not(.navbar__link--cta):focus::after { width: 100%; }
+            
+            /* --- THE CTA BUTTON --- */
+            .navbar__item--cta { margin-left: 1rem; }
+            .navbar__link--cta {
+                color: var(--color-cta-text);
+                background-color: var(--color-cta);
+                padding: 0.75rem 1.5rem;
+                border-radius: 50px;
+                transition: transform var(--transition-speed) ease,
+                            box-shadow var(--transition-speed) ease;
+            }
+            /* The "Lift & Glow" effect */
+            .navbar__link--cta:hover, .navbar__link--cta:focus-visible {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px var(--color-cta-shadow);
+                color: var(--color-cta-text); /* Ensure text stays white on hover */
+            }
+        }
+
+.img{
+    height: 80px;
+    border-radius: 50%;
+}       
+.h2{
+    color: #f19925;
+    text-align: center;
+} 
+.main{
+    background-color: #191919;
+
+}
+main{
+    padding: 15px;
+}
+a:hover{
+background-color: #11b043;
+color: red;
+}
