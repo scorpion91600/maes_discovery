@@ -1,3 +1,6 @@
+<img width="1920" height="2926" alt="image" src="https://github.com/user-attachments/assets/db74a14a-c0e5-4199-9b73-bad3c4715c21" />
+
+
 # 🎵 Maes — Site Discographie
 
 > Projet réalisé dans le cadre de la formation **La Toile** — *EM Lyon Business School*
