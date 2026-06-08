@@ -51,7 +51,7 @@ data.json  ──►  script.js  ──►  index.html
 ---
 
 ## 🗂️ Structure du projet
-
+```txt
 maes_discovery/
 │
 ├── index.html          # Coquille vide — page Biographie
@@ -63,7 +63,7 @@ maes_discovery/
 ├── data.json           # Source unique de vérité — toutes les données
 │
 └── photo_maes.jpg      # Photo utilisée dans la navbar
-
+```
 
 ---
 
