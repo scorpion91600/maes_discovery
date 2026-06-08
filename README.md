@@ -1,4 +1,4 @@
-<img width="1920" height="2926" alt="image" src="https://github.com/user-attachments/assets/db74a14a-c0e5-4199-9b73-bad3c4715c21" />
+<img width="1920" height="2926" alt="image" src="https://github.com/user-attachments/assets/71a6c1ef-f7e7-4584-a8c8-3619ae2a4784" />
 
 
 # 🎵 Maes — Site Discographie
