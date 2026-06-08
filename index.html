@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maes — Biographie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Maes </title>
 </head>
-
 <body>
+
+    <!-- NAVBAR -->
     <header class="navbar">
         <div class="navbar__container">
-            <a href="#" class="navbar__brand"><img class="img" src="photo_maes.jpg" alt=""></a>
+            <a href="index.html" class="navbar__brand">
+                <img src="photo_maes.jpg" alt="Photo de Maes">
+            </a>
 
-            <button class="navbar__toggle" id="navbarToggle" aria-label="Open menu" aria-controls="navbarMenu"
-                aria-expanded="false">&#x2630;</button>
-            <h2>MAES</h2>
+            <button class="navbar__toggle" id="navbarToggle"
+                aria-label="Ouvrir le menu" aria-controls="navbarMenu" aria-expanded="false">
+                &#x2630;
+            </button>
+
+            <h2 class="navbar__title">MAES</h2>
+
             <nav class="navbar__menu" id="navbarMenu">
                 <ul class="navbar__list">
-                    <li class="navbar__item"><a href="index.html" class="navbar__link">Biographie</a></li>
-                    <li class="navbar__item"><a href="album.html" class="navbar__link">Album</a></li>
-                    <li class="navbar__item"><a href="#" class="navbar__link">Discographie</a></li>
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__link">Biographie</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="album.html" class="navbar__link">Albums</a>
+                    </li>
+                    <!-- <li class="navbar__item">
+                        <a href="#" class="navbar__link">Discographie</a>
+                    </li> -->
                     <li class="navbar__item navbar__item--cta">
                         <a href="tracklist.html" class="navbar__link navbar__link--cta">Tracklist</a>
                     </li>
@@ -28,55 +42,139 @@
             </nav>
         </div>
     </header>
+    <!-- MAIN CONTENT -->
+    <main class="page-wrapper">
 
+        <!-- HERO -->
+        <section class="hero">
+            <span class="hero__tag">Rappeur · Chanteur · Français</span>
+            <h1 class="hero__name">Maes</h1>
+            <p class="hero__real-name">De son vrai nom <strong>Walid Georgey</strong></p>
+            <p class="hero__born">Né le <strong>10 janvier 1995</strong> à Villepinte, Seine-Saint-Denis</p>
+        </section>
 
+        <!-- STATS -->
+        <div class="stats" role="list">
+            <div class="stat-card" role="listitem">
+                <div class="stat-card__number">5</div>
+                <div class="stat-card__label">Albums studio</div>
+            </div>
+            <div class="stat-card" role="listitem">
+                <div class="stat-card__number">🥇</div>
+                <div class="stat-card__label">Disque d'or en 1 mois</div>
+            </div>
+            <div class="stat-card" role="listitem">
+                <div class="stat-card__number">93</div>
+                <div class="stat-card__label">Seine-Saint-Denis</div>
+            </div>
+        </div>
 
+        <!-- BIO CARD 1 -->
+        <article class="bio-card">
+            <div class="bio-card__title">Origines</div>
+            <p>
+                <strong>Maes</strong>, de son vrai nom Walid Georgey, est un rappeur et chanteur français
+                né le <strong>10 janvier 1995</strong> à
+                <a href="https://fr.wikipedia.org/wiki/Villepinte_(Seine-Saint-Denis)" target="_blank" rel="noopener">Villepinte</a>
+                (Seine-Saint-Denis), originaire de
+                <a href="https://fr.wikipedia.org/wiki/Sevran" target="_blank" rel="noopener">Sevran</a>.
+            </p>
+        </article>
 
+        <!-- MAP CARD -->
+        <div class="map-card">
+            <div class="map-card__header">
+                <div class="map-card__dot"></div>
+                Sevran — Seine-Saint-Denis (93)
+            </div>
+            <iframe
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=fr&q=sevran&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                title="Carte de Sevran"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
 
+        <!-- BIO CARD 2 -->
+        <article class="bio-card">
+            <div class="bio-card__title">Carrière musicale</div>
+            <p>
+                Son premier album,
+                <a href="https://www.fnac.com/a12993599/Maes-Pure-Inclus-2-titres-bonus-CD-album" target="_blank" rel="noopener"><strong>Pure</strong></a>
+                (2018), devient <strong>disque d'or en un mois</strong>.
+                Deux ans plus tard, il sort
+                <a href="https://www.fnac.com/a14028341/Maes-Les-derniers-salopards-CD-album" target="_blank" rel="noopener"><strong>Les Derniers Salopards</strong></a>
+                (2020), certifié <strong>disque d'or en onze jours</strong> et
+                <strong>disque de platine en un mois</strong>.
+            </p>
+            <p style="margin-top: 1rem;">
+                S'ensuivent deux autres albums :
+                <a href="https://www.fnac.com/a17751206/Maes-Omerta-CD-album" target="_blank" rel="noopener"><strong>Omerta</strong></a>
+                (2023) et
+                <a href="https://www.fnac.com/a20666385/Maes-La-vie-continue-CD-album" target="_blank" rel="noopener"><strong>La Vie Continue</strong></a>
+                (2024).
+            </p>
+        </article>
 
+        <!-- DISCOGRAPHY TIMELINE -->
+        <section class="timeline">
+            <div class="timeline__title">Discographie</div>
+            <ul class="timeline__list">
+                <li class="timeline__item">
+                    <span class="timeline__year">2018</span>
+                    <span class="timeline__album">Pure</span>
+                    <span class="timeline__badge badge--gold">Disque d'or</span>
+                </li>
+                <li class="timeline__item">
+                    <span class="timeline__year">2020</span>
+                    <span class="timeline__album">Les Derniers Salopards</span>
+                    <span class="timeline__badge badge--platinum">Platine</span>
+                </li>
+                <li class="timeline__item">
+                    <span class="timeline__year">2021</span>
+                    <span class="timeline__album">Réelle Vie 3.0</span>
+                </li>
+                <li class="timeline__item">
+                    <span class="timeline__year">2023</span>
+                    <span class="timeline__album">Omerta</span>
+                </li>
+                <li class="timeline__item">
+                    <span class="timeline__year">2024</span>
+                    <span class="timeline__album">La Vie Continue</span>
+                </li>
+            </ul>
+        </section>
 
+        <!-- ALERT CARD -->
+        <aside class="alert-card" role="note" aria-label="Affaires judiciaires">
+            <div class="alert-card__icon">⚖️</div>
+            <div>
+                <div class="alert-card__label">Affaires judiciaires</div>
+                <p>
+                    Mis en cause dans plusieurs affaires judiciaires, Maes est condamné en France en
+                    <strong>2024 à 10 mois ferme</strong>, puis au Maroc en <strong>2025 à 7 ans de prison ferme</strong>
+                    pour avoir planifié un assassinat sur le territoire marocain.
+                </p>
+            </div>
+        </aside>
 
+    </main>
 
-
-    <main>
-
-        <p><strong> Maes</strong><br>de son vrai nom Walid Georgey, né le 10 janvier 1995 à
-            <strong><a href="https://fr.wikipedia.org/wiki/Villepinte_(Seine-Saint-Denis)"> Villepinte</a></strong>
-            (Seine-Saint-Denis),
-            est un rappeur et chanteur français, originaire de
-            <strong><a href="https://fr.wikipedia.org/wiki/Sevran">Sevran.</a></strong>
-        </p>
-        <div style="width: 100%"><iframe class="flexs" width="40%" height="300" frameborder="0" scrolling="no" marginheight="0"
-                marginwidth="0"
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=sevran+(Carte%20de%20Sevran)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                    href="https://www.mapsdirections.info/pl/mapa-populacji/"></a></iframe></div>
-
-        <p><strong>Son premier album, <a
-                    href="https://www.fnac.com/a12993599/Maes-Pure-Inclus-2-titres-bonus-CD-album">Pure</a> </strong>
-            (2018), devient disque d'or en un mois. Deux ans plus tard, il sort <strong>un deuxième opus</strong>,
-            <strong><a href="https://www.fnac.com/a14028341/Maes-Les-derniers-salopards-CD-album">Les Derniers
-                    Salopards</a></strong> , qui est certifié disque d'or en onze jours et disque de platine en un mois.
-        </p>
-
-        <p>S'ensuivent deux autres albums : <strong><a href="https://www.fnac.com/a17751206/Maes-Omerta-CD-album">Omerta</a></strong> (2023) <strong><a href="https://www.fnac.com/a20666385/Maes-La-vie-continue-CD-album">et La vie continue</a></strong> (2024).
-        </p>
-       <p> Mis en cause dans plusieurs affaires judiciaires, il est condamné en France en 2024 à 10 mois ferme, puis au
-        Maroc en 2025 à 7 ans de prison ferme pour avoir planifié un assassinat sur le territoire marocain.</p><br>
-        
-</main>
-        <!-- <ul>
-            <h2>Album</h2>
-            <li>Pure (2018)</li>
-            <li>Les Derniers Salopards (2020)</li>
-            <li>Réelle vie 3.0 (2021)</li>
-            <li>Omerta (2023)</li>
-            <li>La Vie Continue (2024)</li>
-        </ul> -->
-
-    <footer>
-
+    <footer class="footer">
+        <p>© 2025 Maes Fan Page — Projet éducatif</p>
     </footer>
-</body>
-<script src="script.js"></script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.getElementById("navbarToggle");
+            const menu = document.getElementById("navbarMenu");
+            if (toggle && menu) {
+                toggle.addEventListener("click", function () {
+                    const open = menu.classList.toggle("is-active");
+                    toggle.setAttribute("aria-expanded", open);
+                });
+            }
+        });
+    </script>
+</body>
 </html>
