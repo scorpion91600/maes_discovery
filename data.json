@@ -1,0 +1,180 @@
+{
+  "navbar": {
+    "logo": "photo_maes.jpg",
+    "logoAlt": "Photo de Maes",
+    "titre": "MAES",
+    "liens": [
+      { "texte": "Biographie", "href": "index.html",     "cta": false },
+      { "texte": "Albums",     "href": "album.html",     "cta": false },
+      { "texte": "Tracklist",  "href": "tracklist.html", "cta": true  }
+    ]
+  },
+  "artiste": {
+    "nom": "Maes",
+    "nomComplet": "Walid Georgey",
+    "dateNaissance": "10 janvier 1995",
+    "lieuNaissance": "Villepinte, Seine-Saint-Denis",
+    "ville": "Sevran",
+    "tags": ["Rappeur", "Chanteur", "Français"],
+    "map": {
+      "label": "Sevran — Seine-Saint-Denis (93)",
+      "url": "https://maps.google.com/maps?width=100%25&height=600&hl=fr&q=sevran&t=&z=14&ie=UTF8&iwloc=B&output=embed",
+      "titre": "Carte de Sevran"
+    },
+    "stats": [
+      { "nombre": "5",  "label": "Albums studio" },
+      { "nombre": "🥇", "label": "Disque d'or en 1 mois" },
+      { "nombre": "93", "label": "Seine-Saint-Denis" }
+    ],
+    "origines": "Maes, de son vrai nom Walid Georgey, est un rappeur et chanteur français né le 10 janvier 1995 à Villepinte (Seine-Saint-Denis), originaire de Sevran.",
+    "carriere": [
+      {
+        "texte": "Son premier album Pure (2018) devient disque d'or en un mois. Deux ans plus tard, il sort Les Derniers Salopards (2020), certifié disque d'or en onze jours et disque de platine en un mois.",
+        "liens": [
+          { "mot": "Pure",                 "url": "https://www.fnac.com/a12993599/Maes-Pure-Inclus-2-titres-bonus-CD-album" },
+          { "mot": "Les Derniers Salopards","url": "https://www.fnac.com/a14028341/Maes-Les-derniers-salopards-CD-album" }
+        ]
+      },
+      {
+        "texte": "S'ensuivent deux autres albums : Omerta (2023) et La Vie Continue (2024).",
+        "liens": [
+          { "mot": "Omerta",         "url": "https://www.fnac.com/a17751206/Maes-Omerta-CD-album" },
+          { "mot": "La Vie Continue","url": "https://www.fnac.com/a20666385/Maes-La-vie-continue-CD-album" }
+        ]
+      }
+    ],
+    "discographie": [
+      { "annee": "2018", "titre": "Pure",                  "certification": "Disque d'or", "badge": "gold" },
+      { "annee": "2020", "titre": "Les Derniers Salopards", "certification": "Platine",    "badge": "platinum" },
+      { "annee": "2021", "titre": "Réelle Vie 3.0",        "certification": null,          "badge": null },
+      { "annee": "2023", "titre": "Omerta",                "certification": null,          "badge": null },
+      { "annee": "2024", "titre": "La Vie Continue",       "certification": null,          "badge": null }
+    ],
+    "affairesJudiciaires": [
+      "Mis en cause dans plusieurs affaires judiciaires, Maes est condamné en France en 2024 à 10 mois ferme, puis au Maroc en 2025 à 7 ans de prison ferme pour avoir planifié un assassinat sur le territoire marocain."
+    ],
+    "pageAlbums": {
+      "eyebrow": "Discographie Studio",
+      "titre": "Les Albums de Maes",
+      "sousTitre": "5 projets • 2018 – 2024 • Rap Français",
+      "stats": [
+        { "nombre": "5",  "label": "Albums studio" },
+        { "nombre": "4×", "label": "Certifications or" },
+        { "nombre": "2×", "label": "Disques de platine" },
+        { "nombre": "6",  "label": "Années de carrière" }
+      ],
+      "albums": [
+        {
+          "slug": "pure",
+          "annee": "2018",
+          "titre": "Pure",
+          "nbTitres": 16,
+          "rang": "1er album",
+          "popularite": 72,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2GQzDXBof8Zp5wMx83TuvYEkHTqZMEIMjQ&s",
+          "badge": { "classe": "gold",   "texte": "🥇 Or" },
+          "spotify": "https://open.spotify.com/album/pure-maes"
+        },
+        {
+          "slug": "salopards",
+          "annee": "2020",
+          "titre": "Les Derniers Salopards",
+          "nbTitres": 15,
+          "rang": "2ème album",
+          "popularite": 88,
+          "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/7e/0b/b1/11602814/1540-1/tsp20191211155114/Les-derniers-salopards.jpg",
+          "badge": { "classe": "plat",   "texte": "💿 Platine" },
+          "spotify": "https://open.spotify.com/album/les-derniers-salopards"
+        },
+        {
+          "slug": "reelle",
+          "annee": "2021",
+          "titre": "Réelle Vie 3.0",
+          "nbTitres": 14,
+          "rang": "3ème album",
+          "popularite": 65,
+          "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/57/c4/d3/13878359/1540-1/tsp20211110165109/Reelle-vie-3-0.jpg",
+          "badge": { "classe": "gold",   "texte": "🥇 Or" },
+          "spotify": "https://open.spotify.com/album/reelle-vie"
+        },
+        {
+          "slug": "omerta",
+          "annee": "2023",
+          "titre": "Omerta",
+          "nbTitres": 17,
+          "rang": "4ème album",
+          "popularite": 79,
+          "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/ce/85/e6/15107534/1507-1/tsp20230208152142/Omerta.jpg",
+          "badge": { "classe": "gold",   "texte": "🥇 Or" },
+          "spotify": "https://open.spotify.com/album/omerta-maes"
+        },
+        {
+          "slug": "vie",
+          "annee": "2024",
+          "titre": "La Vie Continue",
+          "nbTitres": 18,
+          "rang": "5ème album",
+          "popularite": 93,
+          "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/94/48/14/18106516/1507-1/tsp20240619085047/La-vie-continue-Edition-Limitee.jpg",
+          "badge": { "classe": "double", "texte": "💿 2× Platine" },
+          "spotify": "https://open.spotify.com/album/la-vie-continue-maes"
+        }
+      ]
+    },
+    "pageTracklist": {
+      "eyebrow": "Écoute complète",
+      "titre": "Tracklists",
+      "sousTitre": "Sélectionne un album pour parcourir ses titres",
+      "albums": [
+        {
+          "slug": "pure",
+          "tabTitre": "Pure",
+          "eyebrow": "1er Album Studio",
+          "titre": "Pure",
+          "annee": "2018",
+          "certification": "🥇 Disque d'or",
+          "nbTitres": 16,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2GQzDXBof8Zp5wMx83TuvYEkHTqZMEIMjQ&s",
+          "deezerUrl": "https://widget.deezer.com/widget/dark/album/80068962",
+          "spotify": "https://open.spotify.com/search/maes%20pure"
+        },
+        {
+          "slug": "salopards",
+          "tabTitre": "Les Derniers Salopards",
+          "eyebrow": "2ème Album Studio",
+          "titre": "Les Derniers Salopards",
+          "annee": "2020",
+          "certification": "💿 Disque de platine",
+          "nbTitres": 15,
+          "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/7e/0b/b1/11602814/1540-1/tsp20191211155114/Les-derniers-salopards.jpg",
+          "deezerUrl": "https://widget.deezer.com/widget/dark/album/119178252",
+          "spotify": "https://open.spotify.com/search/maes%20les%20derniers%20salopards"
+        },
+        {
+          "slug": "omerta",
+          "tabTitre": "Omerta",
+          "eyebrow": "4ème Album Studio",
+          "titre": "Omerta",
+          "annee": "2023",
+          "certification": "🥇 Disque d'or",
+          "nbTitres": 17,
+          "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/ce/85/e6/15107534/1507-1/tsp20230208152142/Omerta.jpg",
+          "deezerUrl": "https://widget.deezer.com/widget/dark/album/455427875",
+          "spotify": "https://open.spotify.com/search/maes%20omerta"
+        },
+        {
+          "slug": "vie",
+          "tabTitre": "La Vie Continue",
+          "eyebrow": "5ème Album Studio",
+          "titre": "La Vie Continue",
+          "annee": "2024",
+          "certification": "💿 2× Platine",
+          "nbTitres": 18,
+          "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/94/48/14/18106516/1507-1/tsp20240619085047/La-vie-continue-Edition-Limitee.jpg",
+          "deezerUrl": "https://widget.deezer.com/widget/dark/album/659982391",
+          "spotify": "https://open.spotify.com/search/maes%20la%20vie%20continue"
+        }
+      ]
+    }
+  }
+}

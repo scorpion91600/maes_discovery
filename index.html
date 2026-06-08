@@ -10,163 +10,59 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR injectée -->
     <header class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" class="navbar__brand">
-                <img src="photo_maes.jpg" alt="Photo de Maes">
-            </a>
-            <button class="navbar__toggle" id="navbarToggle"
-                aria-label="Ouvrir le menu" aria-controls="navbarMenu" aria-expanded="false">
-                &#x2630;
-            </button>
-            <h2 class="navbar__title">MAES</h2>
-            <nav class="navbar__menu" id="navbarMenu">
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__link">Biographie</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="album.html" class="navbar__link">Albums</a>
-                    </li>
-                    <li class="navbar__item navbar__item--cta">
-                        <a href="tracklist.html" class="navbar__link navbar__link--cta">Tracklist</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <div class="navbar__container" id="navbar-container"></div>
     </header>
 
     <main class="page-wrapper">
 
-        <!-- HERO -->
-        <section class="hero">
-            <span class="hero__tag">Rappeur · Chanteur · Français</span>
-            <h1 class="hero__name">Maes</h1>
-            <p class="hero__real-name">De son vrai nom <strong>Walid Georgey</strong></p>
-            <p class="hero__born">Né le <strong>10 janvier 1995</strong> à Villepinte, Seine-Saint-Denis</p>
-        </section>
+        <!-- HERO injecté -->
+        <section class="hero" id="hero-section"></section>
 
-        <!-- STATS -->
-        <div class="stats" role="list">
-            <div class="stat-card" role="listitem">
-                <div class="stat-card__number">5</div>
-                <div class="stat-card__label">Albums studio</div>
-            </div>
-            <div class="stat-card" role="listitem">
-                <div class="stat-card__number">🥇</div>
-                <div class="stat-card__label">Disque d'or en 1 mois</div>
-            </div>
-            <div class="stat-card" role="listitem">
-                <div class="stat-card__number">93</div>
-                <div class="stat-card__label">Seine-Saint-Denis</div>
-            </div>
-        </div>
+        <!-- STATS injectées -->
+        <div class="stats" id="stats-container" role="list"></div>
 
-        <!-- SECTION : ORIGINES -->
+        <!-- ORIGINES -->
         <section class="section-block section-block--origins">
             <div class="section-block__header">
                 <span class="section-block__icon">📍</span>
                 <span class="section-block__title">Origines</span>
             </div>
             <div class="section-block__body">
-                <p>
-                    <strong>Maes</strong>, de son vrai nom Walid Georgey, est un rappeur et chanteur français
-                    né le <strong>10 janvier 1995</strong> à
-                    <a href="https://fr.wikipedia.org/wiki/Villepinte_(Seine-Saint-Denis)" target="_blank" rel="noopener">Villepinte</a>
-                    (Seine-Saint-Denis), originaire de
-                    <a href="https://fr.wikipedia.org/wiki/Sevran" target="_blank" rel="noopener">Sevran</a>.
-                </p>
-
-                <!-- MAP intégrée dans la section Origines -->
-                <div class="map-card">
-                    <div class="map-card__header">
-                        <div class="map-card__dot"></div>
-                        Sevran — Seine-Saint-Denis (93)
-                    </div>
-                    <iframe
-                        src="https://maps.google.com/maps?width=100%25&height=600&hl=fr&q=sevran&t=&z=14&ie=UTF8&iwloc=B&output=embed"
-                        title="Carte de Sevran"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+                <p id="origines-texte"></p>
+                <!-- MAP injectée -->
+                <div class="map-card" id="map-card"></div>
             </div>
         </section>
 
-        <!-- SECTION : CARRIÈRE MUSICALE -->
+        <!-- CARRIÈRE -->
         <section class="section-block section-block--career">
             <div class="section-block__header">
                 <span class="section-block__icon">🎤</span>
                 <span class="section-block__title">Carrière musicale</span>
             </div>
-            <div class="section-block__body">
-                <p>
-                    Son premier album,
-                    <a href="https://www.fnac.com/a12993599/Maes-Pure-Inclus-2-titres-bonus-CD-album" target="_blank" rel="noopener"><strong>Pure</strong></a>
-                    (2018), devient <strong>disque d'or en un mois</strong>.
-                    Deux ans plus tard, il sort
-                    <a href="https://www.fnac.com/a14028341/Maes-Les-derniers-salopards-CD-album" target="_blank" rel="noopener"><strong>Les Derniers Salopards</strong></a>
-                    (2020), certifié <strong>disque d'or en onze jours</strong> et
-                    <strong>disque de platine en un mois</strong>.
-                </p>
-                <p style="margin-top: 1rem;">
-                    S'ensuivent deux autres albums :
-                    <a href="https://www.fnac.com/a17751206/Maes-Omerta-CD-album" target="_blank" rel="noopener"><strong>Omerta</strong></a>
-                    (2023) et
-                    <a href="https://www.fnac.com/a20666385/Maes-La-vie-continue-CD-album" target="_blank" rel="noopener"><strong>La Vie Continue</strong></a>
-                    (2024).
-                </p>
-            </div>
+            <div class="section-block__body" id="carriere-body"></div>
         </section>
 
-        <!-- SECTION : DISCOGRAPHIE -->
+        <!-- DISCOGRAPHIE -->
         <section class="section-block section-block--disco">
             <div class="section-block__header">
                 <span class="section-block__icon">💿</span>
                 <span class="section-block__title">Discographie</span>
             </div>
             <div class="section-block__body">
-                <ul class="timeline__list">
-                    <li class="timeline__item">
-                        <span class="timeline__year">2018</span>
-                        <span class="timeline__album">Pure</span>
-                        <span class="timeline__badge badge--gold">Disque d'or</span>
-                    </li>
-                    <li class="timeline__item">
-                        <span class="timeline__year">2020</span>
-                        <span class="timeline__album">Les Derniers Salopards</span>
-                        <span class="timeline__badge badge--platinum">Platine</span>
-                    </li>
-                    <li class="timeline__item">
-                        <span class="timeline__year">2021</span>
-                        <span class="timeline__album">Réelle Vie 3.0</span>
-                    </li>
-                    <li class="timeline__item">
-                        <span class="timeline__year">2023</span>
-                        <span class="timeline__album">Omerta</span>
-                    </li>
-                    <li class="timeline__item">
-                        <span class="timeline__year">2024</span>
-                        <span class="timeline__album">La Vie Continue</span>
-                    </li>
-                </ul>
+                <ul class="timeline__list" id="timeline-list"></ul>
             </div>
         </section>
 
-        <!-- SECTION : AFFAIRES JUDICIAIRES -->
+        <!-- AFFAIRES JUDICIAIRES -->
         <section class="section-block section-block--legal">
             <div class="section-block__header">
                 <span class="section-block__icon">⚖️</span>
                 <span class="section-block__title">Affaires judiciaires</span>
             </div>
-            <div class="section-block__body">
-                <p>
-                    Mis en cause dans plusieurs affaires judiciaires, Maes est condamné en France en
-                    <strong>2024 à 10 mois ferme</strong>, puis au Maroc en <strong>2025 à 7 ans de prison ferme</strong>
-                    pour avoir planifié un assassinat sur le territoire marocain.
-                </p>
-            </div>
+            <div class="section-block__body" id="legal-body"></div>
         </section>
 
     </main>
@@ -175,17 +71,6 @@
         <p>© 2025 Maes Fan Page — Projet éducatif</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggle = document.getElementById("navbarToggle");
-            const menu = document.getElementById("navbarMenu");
-            if (toggle && menu) {
-                toggle.addEventListener("click", function () {
-                    const open = menu.classList.toggle("is-active");
-                    toggle.setAttribute("aria-expanded", open);
-                });
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

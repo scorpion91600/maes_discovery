@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,284 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Maes — Tracklist</title>
-    
 </head>
-
 <body>
 
-    <!-- ==============================
-         NAVBAR
-    ============================== -->
+    <!-- NAVBAR injectée -->
     <header class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" class="navbar__brand">
-                <img src="photo_maes.jpg" alt="Photo de Maes">
-            </a>
-
-            <button class="navbar__toggle" id="navbarToggle"
-                aria-label="Ouvrir le menu" aria-controls="navbarMenu" aria-expanded="false">
-                &#x2630;
-            </button>
-
-            <h2 class="navbar__title">MAES</h2>
-
-            <nav class="navbar__menu" id="navbarMenu">
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__link">Biographie</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="album.html" class="navbar__link">Albums</a>
-                    </li>
-                    <!-- <li class="navbar__item">
-                        <a href="#" class="navbar__link">Discographie</a>
-                    </li> -->
-                    <li class="navbar__item navbar__item--cta">
-                        <a href="tracklist.html" class="navbar__link navbar__link--cta">Tracklist</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <div class="navbar__container" id="navbar-container"></div>
     </header>
 
-    <!-- ==============================
-         CONTENU PRINCIPAL
-    ============================== -->
     <main>
         <div class="page-wrapper">
-
-            <!-- En-tête -->
-            <div class="page-header">
-                <span class="page-header__eyebrow">Écoute complète</span>
-                <h1 class="page-header__title">Tracklists</h1>
-                <p class="page-header__subtitle">Sélectionne un album pour parcourir ses titres</p>
-            </div>
-
-            <!-- Tabs de sélection -->
-            <div class="album-tabs" role="tablist" aria-label="Sélection d'album">
-                <button class="album-tab is-active" data-album="pure"
-                    role="tab" aria-selected="true" aria-controls="panel-pure">
-                    Pure
-                </button>
-                <button class="album-tab" data-album="salopards"
-                    role="tab" aria-selected="false" aria-controls="panel-salopards">
-                    Les Derniers Salopards
-                </button>
-                <button class="album-tab" data-album="omerta"
-                    role="tab" aria-selected="false" aria-controls="panel-omerta">
-                    Omerta
-                </button>
-                <button class="album-tab" data-album="vie"
-                    role="tab" aria-selected="false" aria-controls="panel-vie">
-                    La Vie Continue
-                </button>
-            </div>
-
-            <!-- ===== PANNEAU : PURE ===== -->
-            <div class="album-panel is-active" id="panel-pure" role="tabpanel">
-                <div class="album-header">
-                    <img class="album-header__cover"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2GQzDXBof8Zp5wMx83TuvYEkHTqZMEIMjQ&s"
-                        alt="Pochette Pure">
-                    <div class="album-header__info">
-                        <p class="album-header__eyebrow">1er Album Studio</p>
-                        <h2 class="album-header__title">Pure</h2>
-                        <div class="album-header__meta">
-                            <span class="album-header__tag">📅 2018</span>
-                            <span class="album-header__tag">🥇 Disque d'or</span>
-                            <span class="album-header__tag">16 titres</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="deezer-wrapper">
-                    <div class="deezer-wrapper__header">
-                        <div class="deezer-wrapper__dot"></div>
-                        <div class="deezer-wrapper__dot"></div>
-                        <div class="deezer-wrapper__dot"></div>
-                        <span class="deezer-wrapper__label">Deezer · Pure</span>
-                    </div>
-                    <iframe
-                        title="Pure — Deezer"
-                        src="https://widget.deezer.com/widget/dark/album/80068962"
-                        height="380"
-                        frameborder="0"
-                        allowtransparency="true"
-                        allow="encrypted-media; clipboard-write">
-                    </iframe>
-                </div>
-
-                <a href="https://open.spotify.com/search/maes%20pure" target="_blank"
-                    rel="noopener" class="spotify-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-                    </svg>
-                    Écouter sur Spotify
-                </a>
-            </div>
-
-            <!-- ===== PANNEAU : LES DERNIERS SALOPARDS ===== -->
-            <div class="album-panel" id="panel-salopards" role="tabpanel">
-                <div class="album-header">
-                    <img class="album-header__cover"
-                        src="https://static.fnac-static.com/multimedia/Images/FR/NR/7e/0b/b1/11602814/1540-1/tsp20191211155114/Les-derniers-salopards.jpg"
-                        alt="Pochette Les Derniers Salopards">
-                    <div class="album-header__info">
-                        <p class="album-header__eyebrow">2ème Album Studio</p>
-                        <h2 class="album-header__title">Les Derniers Salopards</h2>
-                        <div class="album-header__meta">
-                            <span class="album-header__tag">📅 2020</span>
-                            <span class="album-header__tag">💿 Disque de platine</span>
-                            <span class="album-header__tag">15 titres</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="deezer-wrapper">
-                    <div class="deezer-wrapper__header">
-                        <div class="deezer-wrapper__dot"></div>
-                        <div class="deezer-wrapper__dot"></div>
-                        <div class="deezer-wrapper__dot"></div>
-                        <span class="deezer-wrapper__label">Deezer · Les Derniers Salopards</span>
-                    </div>
-                    <iframe
-                        title="Les Derniers Salopards — Deezer"
-                        src="https://widget.deezer.com/widget/dark/album/119178252"
-                        height="380"
-                        frameborder="0"
-                        allowtransparency="true"
-                        allow="encrypted-media; clipboard-write">
-                    </iframe>
-                </div>
-
-                <a href="https://open.spotify.com/search/maes%20les%20derniers%20salopards"
-                    target="_blank" rel="noopener" class="spotify-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-                    </svg>
-                    Écouter sur Spotify
-                </a>
-            </div>
-
-            <!-- ===== PANNEAU : OMERTA ===== -->
-            <div class="album-panel" id="panel-omerta" role="tabpanel">
-                <div class="album-header">
-                    <img class="album-header__cover"
-                        src="https://static.fnac-static.com/multimedia/Images/FR/NR/ce/85/e6/15107534/1507-1/tsp20230208152142/Omerta.jpg"
-                        alt="Pochette Omerta">
-                    <div class="album-header__info">
-                        <p class="album-header__eyebrow">4ème Album Studio</p>
-                        <h2 class="album-header__title">Omerta</h2>
-                        <div class="album-header__meta">
-                            <span class="album-header__tag">📅 2023</span>
-                            <span class="album-header__tag">🥇 Disque d'or</span>
-                            <span class="album-header__tag">17 titres</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="deezer-wrapper">
-                    <div class="deezer-wrapper__header">
-                        <div class="deezer-wrapper__dot"></div>
-                        <div class="deezer-wrapper__dot"></div>
-                        <div class="deezer-wrapper__dot"></div>
-                        <span class="deezer-wrapper__label">Deezer · Omerta</span>
-                    </div>
-                    <iframe
-                        title="Omerta — Deezer"
-                        src="https://widget.deezer.com/widget/dark/album/455427875"
-                        height="380"
-                        frameborder="0"
-                        allowtransparency="true"
-                        allow="encrypted-media; clipboard-write">
-                    </iframe>
-                </div>
-
-                <a href="https://open.spotify.com/search/maes%20omerta"
-                    target="_blank" rel="noopener" class="spotify-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-                    </svg>
-                    Écouter sur Spotify
-                </a>
-            </div>
-
-            <!-- ===== PANNEAU : LA VIE CONTINUE ===== -->
-            <div class="album-panel" id="panel-vie" role="tabpanel">
-                <div class="album-header">
-                    <img class="album-header__cover"
-                        src="https://static.fnac-static.com/multimedia/Images/FR/NR/94/48/14/18106516/1507-1/tsp20240619085047/La-vie-continue-Edition-Limitee.jpg"
-                        alt="Pochette La Vie Continue">
-                    <div class="album-header__info">
-                        <p class="album-header__eyebrow">5ème Album Studio</p>
-                        <h2 class="album-header__title">La Vie Continue</h2>
-                        <div class="album-header__meta">
-                            <span class="album-header__tag">📅 2024</span>
-                            <span class="album-header__tag">💿 2× Platine</span>
-                            <span class="album-header__tag">18 titres</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="deezer-wrapper">
-                    <div class="deezer-wrapper__header">
-                        <div class="deezer-wrapper__dot"></div>
-                        <div class="deezer-wrapper__dot"></div>
-                        <div class="deezer-wrapper__dot"></div>
-                        <span class="deezer-wrapper__label">Deezer · La Vie Continue</span>
-                    </div>
-                    <iframe
-                        title="La Vie Continue — Deezer"
-                        src="https://widget.deezer.com/widget/dark/album/659982391"
-                        height="380"
-                        frameborder="0"
-                        allowtransparency="true"
-                        allow="encrypted-media; clipboard-write">
-                    </iframe>
-                </div>
-
-                <a href="https://open.spotify.com/search/maes%20la%20vie%20continue"
-                    target="_blank" rel="noopener" class="spotify-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-                    </svg>
-                    Écouter sur Spotify
-                </a>
-            </div>
-
+            <!-- EN-TÊTE injecté -->
+            <div id="tracklist-header" class="page-header"></div>
+            <!-- TABS injectés -->
+            <div id="tracklist-tabs" class="album-tabs" role="tablist" aria-label="Sélection d'album"></div>
+            <!-- PANNEAUX injectés -->
+            <div id="tracklist-panels"></div>
         </div>
     </main>
 
     <footer></footer>
-
     <script src="script.js"></script>
-    <script>
-        // ================================================
-        // TABS — Sélection d'album
-        // ================================================
-        const tabs = document.querySelectorAll('.album-tab');
-        const panels = document.querySelectorAll('.album-panel');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = tab.dataset.album;
-
-                // Mise à jour des tabs
-                tabs.forEach(t => {
-                    t.classList.remove('is-active');
-                    t.setAttribute('aria-selected', 'false');
-                });
-                tab.classList.add('is-active');
-                tab.setAttribute('aria-selected', 'true');
-
-                // Mise à jour des panneaux
-                panels.forEach(panel => {
-                    panel.classList.remove('is-active');
-                });
-                const activePanel = document.getElementById(`panel-${target}`);
-                if (activePanel) activePanel.classList.add('is-active');
-            });
-        });
-    </script>
 </body>
 </html>

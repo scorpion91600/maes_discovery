@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,240 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Maes — Albums</title>
-    <style>
-      
-    </style>
 </head>
-
 <body>
 
-    <!-- ==============================
-         NAVBAR
-    ============================== -->
+    <!-- NAVBAR injectée -->
     <header class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" class="navbar__brand">
-                <img src="photo_maes.jpg" alt="Photo de Maes">
-            </a>
-
-            <button class="navbar__toggle" id="navbarToggle"
-                aria-label="Ouvrir le menu" aria-controls="navbarMenu" aria-expanded="false">
-                &#x2630;
-            </button>
-
-            <h2 class="navbar__title">MAES</h2>
-
-            <nav class="navbar__menu" id="navbarMenu">
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__link">Biographie</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="album.html" class="navbar__link">Albums</a>
-                    </li>
-                    <li class="navbar__item">
-                        <!-- <a href="#" class="navbar__link">Discographie</a> -->
-                    </li>
-                    <li class="navbar__item navbar__item--cta">
-                        <a href="tracklist.html" class="navbar__link navbar__link--cta">Tracklist</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <div class="navbar__container" id="navbar-container"></div>
     </header>
 
-    <!-- ==============================
-         CONTENU PRINCIPAL
-    ============================== -->
     <main>
         <div class="page-wrapper">
-
-            <!-- En-tête -->
-            <div class="page-header">
-                <span class="page-header__eyebrow">Discographie Studio</span>
-                <h1 class="page-header__title">Les Albums de Maes</h1>
-                <p class="page-header__subtitle">5 projets • 2018 – 2024 • Rap Français</p>
-            </div>
-
-            <!-- Stats rapides -->
-            <div class="stats-row">
-                <div class="stat-card">
-                    <div class="stat-card__number">5</div>
-                    <div class="stat-card__label">Albums studio</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-card__number">4×</div>
-                    <div class="stat-card__label">Certifications or</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-card__number">2×</div>
-                    <div class="stat-card__label">Disques de platine</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-card__number">6</div>
-                    <div class="stat-card__label">Années de carrière</div>
-                </div>
-            </div>
-
-            <!-- Grille albums -->
-            <div class="albums-grid">
-
-                <!-- Pure (2018) -->
-                <div class="album-card album-card--pure">
-                    <div class="album-card__cover-wrapper">
-                        <img class="album-card__cover"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2GQzDXBof8Zp5wMx83TuvYEkHTqZMEIMjQ&s"
-                            alt="Pochette de l'album Pure de Maes">
-                        <div class="album-card__cover-overlay"></div>
-                        <span class="album-card__badge album-card__badge--gold">🥇 Or</span>
-                    </div>
-                    <div class="album-card__body">
-                        <p class="album-card__year">2018</p>
-                        <h2 class="album-card__title">Pure</h2>
-                        <p class="album-card__tracks">16 titres • 1er album</p>
-                        <div class="album-card__popularity">
-                            <div class="album-card__pop-label">
-                                <span>Popularité</span><span>72%</span>
-                            </div>
-                            <div class="album-card__pop-track">
-                                <div class="album-card__pop-fill"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="https://open.spotify.com/album/pure-maes" class="album-card__spotify" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-                        </svg>
-                        Écouter sur Spotify
-                    </a>
-                </div>
-
-                <!-- Les Derniers Salopards (2020) -->
-                <div class="album-card album-card--salopards">
-                    <div class="album-card__cover-wrapper">
-                        <img class="album-card__cover"
-                            src="https://static.fnac-static.com/multimedia/Images/FR/NR/7e/0b/b1/11602814/1540-1/tsp20191211155114/Les-derniers-salopards.jpg"
-                            alt="Pochette de Les Derniers Salopards">
-                        <div class="album-card__cover-overlay"></div>
-                        <span class="album-card__badge album-card__badge--plat">💿 Platine</span>
-                    </div>
-                    <div class="album-card__body">
-                        <p class="album-card__year">2020</p>
-                        <h2 class="album-card__title">Les Derniers Salopards</h2>
-                        <p class="album-card__tracks">15 titres • 2ème album</p>
-                        <div class="album-card__popularity">
-                            <div class="album-card__pop-label">
-                                <span>Popularité</span><span>88%</span>
-                            </div>
-                            <div class="album-card__pop-track">
-                                <div class="album-card__pop-fill"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="https://open.spotify.com/album/les-derniers-salopards" class="album-card__spotify" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-                        </svg>
-                        Écouter sur Spotify
-                    </a>
-                </div>
-
-                <!-- Réelle Vie 3.0 (2021) -->
-                <div class="album-card album-card--reelle">
-                    <div class="album-card__cover-wrapper">
-                        <img class="album-card__cover"
-                            src="https://static.fnac-static.com/multimedia/Images/FR/NR/57/c4/d3/13878359/1540-1/tsp20211110165109/Reelle-vie-3-0.jpg"
-                            alt="Pochette de Réelle Vie 3.0">
-                        <div class="album-card__cover-overlay"></div>
-                        <span class="album-card__badge album-card__badge--gold">🥇 Or</span>
-                    </div>
-                    <div class="album-card__body">
-                        <p class="album-card__year">2021</p>
-                        <h2 class="album-card__title">Réelle Vie 3.0</h2>
-                        <p class="album-card__tracks">14 titres • 3ème album</p>
-                        <div class="album-card__popularity">
-                            <div class="album-card__pop-label">
-                                <span>Popularité</span><span>65%</span>
-                            </div>
-                            <div class="album-card__pop-track">
-                                <div class="album-card__pop-fill"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="https://open.spotify.com/album/reelle-vie" class="album-card__spotify" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-                        </svg>
-                        Écouter sur Spotify
-                    </a>
-                </div>
-
-                <!-- Omerta (2023) -->
-                <div class="album-card album-card--omerta">
-                    <div class="album-card__cover-wrapper">
-                        <img class="album-card__cover"
-                            src="https://static.fnac-static.com/multimedia/Images/FR/NR/ce/85/e6/15107534/1507-1/tsp20230208152142/Omerta.jpg"
-                            alt="Pochette de l'album Omerta">
-                        <div class="album-card__cover-overlay"></div>
-                        <span class="album-card__badge album-card__badge--gold">🥇 Or</span>
-                    </div>
-                    <div class="album-card__body">
-                        <p class="album-card__year">2023</p>
-                        <h2 class="album-card__title">Omerta</h2>
-                        <p class="album-card__tracks">17 titres • 4ème album</p>
-                        <div class="album-card__popularity">
-                            <div class="album-card__pop-label">
-                                <span>Popularité</span><span>79%</span>
-                            </div>
-                            <div class="album-card__pop-track">
-                                <div class="album-card__pop-fill"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="https://open.spotify.com/album/omerta-maes" class="album-card__spotify" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-                        </svg>
-                        Écouter sur Spotify
-                    </a>
-                </div>
-
-                <!-- La Vie Continue (2024) -->
-                <div class="album-card album-card--vie">
-                    <div class="album-card__cover-wrapper">
-                        <img class="album-card__cover"
-                            src="https://static.fnac-static.com/multimedia/Images/FR/NR/94/48/14/18106516/1507-1/tsp20240619085047/La-vie-continue-Edition-Limitee.jpg"
-                            alt="Pochette de La Vie Continue">
-                        <div class="album-card__cover-overlay"></div>
-                        <span class="album-card__badge album-card__badge--double">💿 2× Platine</span>
-                    </div>
-                    <div class="album-card__body">
-                        <p class="album-card__year">2024</p>
-                        <h2 class="album-card__title">La Vie Continue</h2>
-                        <p class="album-card__tracks">18 titres • 5ème album</p>
-                        <div class="album-card__popularity">
-                            <div class="album-card__pop-label">
-                                <span>Popularité</span><span>93%</span>
-                            </div>
-                            <div class="album-card__pop-track">
-                                <div class="album-card__pop-fill"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="https://open.spotify.com/album/la-vie-continue-maes" class="album-card__spotify" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-                        </svg>
-                        Écouter sur Spotify
-                    </a>
-                </div>
-
-            </div>
+            <!-- EN-TÊTE injecté -->
+            <div id="albums-header" class="page-header"></div>
+            <!-- STATS injectées -->
+            <div id="albums-stats" class="stats-row"></div>
+            <!-- GRILLE injectée -->
+            <div id="albums-grid" class="albums-grid"></div>
         </div>
     </main>
 
     <footer></footer>
-
     <script src="script.js"></script>
 </body>
 </html>
