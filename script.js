@@ -315,7 +315,106 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
         })
+
+        
         .catch(function (err) {
             console.error("Erreur chargement data.json :", err);
         });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".safari-tabs-carousel__container");
+    const indicatorsContainer = document.getElementById("carousel-indicators");
+    const tabs = document.querySelectorAll(".safari-tab");
+    
+    let currentIndex = 0;
+    const totalTabs = tabs.length;
+
+    // Créer les indicateurs
+    tabs.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.className = `carousel-dot ${index === 0 ? "is-active" : ""}`;
+        dot.addEventListener("click", () => goToTab(index));
+        indicatorsContainer.appendChild(dot);
+    });
+
+    // Fonction pour aller à un onglet
+    function goToTab(index) {
+        if (index < 0 || index >= totalTabs) return;
+
+        // Retirer les classes
+        tabs.forEach(tab => {
+            tab.classList.remove("is-active", "is-prev");
+        });
+
+        // Marquer les onglets (avant, actif, après)
+        tabs.forEach((tab, i) => {
+            if (i < index) {
+                tab.classList.add("is-prev");
+            } else if (i === index) {
+                tab.classList.add("is-active");
+            }
+        });
+
+        // Mettre à jour les indicateurs
+        document.querySelectorAll(".carousel-dot").forEach((dot, i) => {
+            dot.classList.toggle("is-active", i === index);
+        });
+
+        currentIndex = index;
+    }
+
+    // Boutons de fermeture
+    document.querySelectorAll(".safari-tab__close").forEach((btn, index) => {
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const tab = tabs[index];
+            tab.style.animation = "none";
+            tab.style.opacity = "0";
+            tab.style.transform = "translateX(100%) rotateY(45deg) scale(0.9)";
+            
+            setTimeout(() => {
+                tab.remove();
+                const remainingTabs = document.querySelectorAll(".safari-tab");
+                if (remainingTabs.length === 0) return;
+                
+                if (index >= remainingTabs.length) {
+                    goToTab(remainingTabs.length - 1);
+                } else {
+                    goToTab(index);
+                }
+            }, 300);
+        });
+    });
+
+    // Navigation au clavier (flèches)
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") goToTab(currentIndex + 1);
+        if (e.key === "ArrowLeft") goToTab(currentIndex - 1);
+    });
+
+    // Swipe sur mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    container.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].clientX;
+    });
+
+    container.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            goToTab(currentIndex + 1);
+        } else if (touchEndX > touchStartX + 50) {
+            goToTab(currentIndex - 1);
+        }
+    }
+
+    // Initialiser le premier onglet
+    goToTab(0);
 });
